@@ -1,0 +1,1 @@
+In Go, statements are separated by ending a line(hitting the enter key) or by semicolon ";" BY entering the enter key adds ";" to the end of the line implicitly

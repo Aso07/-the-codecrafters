@@ -1,0 +1,5 @@
+SENTINEL FIELD REPORT — PROCESSED
+1. ✦ ACTION: fix bug
+2. [REDACTED]: secret mission
+3. normal line
+4. another line

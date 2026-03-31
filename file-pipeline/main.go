@@ -111,5 +111,5 @@ func shouldRemove(line string) bool {
 }
 
 func addLineNumber(line string, index int) string {
-	return fmt.Sprintf("%03d. %s", index, line)
+	return fmt.Sprintf("%1d. %s", index, line)
 }

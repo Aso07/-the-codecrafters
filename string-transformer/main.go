@@ -1,3 +1,9 @@
+// CodeCrafters — Operation Gopher Protocol
+// Module: String Transformer
+// Author: [Agene Okoh]
+// Squad:  [Goroutine]
+
+
 package main
 
 import (
@@ -73,7 +79,10 @@ func reverse(text string) string {
 }
 
 func main() {
-	fmt.Println("SENTINEL STRING TRANSFORMER — ONLINE")
+	fmt.Println("SENTINEL STRING TRANSFORMER IS ONLINE")
+	fmt.Println("──────────────────────────────────────")
+	fmt.Println("Commands: upper, lower, cap, title, snake, reverse, exit")
+	fmt.Println("Usage:    <command> <text>  e.g. upper sentinel is online")
 	fmt.Println("──────────────────────────────────────")
 
 	reader := bufio.NewReader(os.Stdin)
@@ -92,12 +101,18 @@ func main() {
 		command := strings.ToLower(parts[0])
 
 		if command == "exit" {
-			fmt.Println("Shutting down String Transformer. Goodbye.")
-			break
-		}
+    fmt.Println("Shutting down String Transformer. Goodbye.")
+    break
+}
+
+if command == "help" {
+    fmt.Println("Commands: upper, lower, cap, title, snake, reverse, exit")
+    fmt.Println("Usage:    <command> <text>  e.g. upper sentinel is online")
+    continue
+}
 
 		if len(parts) < 2 || strings.TrimSpace(parts[1]) == "" {
-			fmt.Printf("✗ No text provided. Usage: %s <text>\n", command)
+			fmt.Printf(" No text provided. Usage: %s <text>\n", command)
 			continue
 		}
 
@@ -105,19 +120,19 @@ func main() {
 
 		switch command {
 		case "upper":
-			fmt.Println("→", upper(text))
+			fmt.Println("", upper(text))
 		case "lower":
-			fmt.Println("→", lower(text))
+			fmt.Println("", lower(text))
 		case "cap":
-			fmt.Println("→", cap(text))
+			fmt.Println("", cap(text))
 		case "title":
-			fmt.Println("→", title(text))
+			fmt.Println("", title(text))
 		case "snake":
-			fmt.Println("→", snake(text))
+			fmt.Println("", snake(text))
 		case "reverse":
-			fmt.Println("→", reverse(text))
+			fmt.Println("", reverse(text))
 		default:
-			fmt.Printf("✗ Unknown command: %q\n", command)
+			fmt.Printf(" Unknown command: %q\n", command)
 			fmt.Println("Valid commands: upper, lower, cap, title, snake, reverse, exit")
 		}
 	}

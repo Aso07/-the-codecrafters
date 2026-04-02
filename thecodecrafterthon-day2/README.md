@@ -36,3 +36,6 @@ Hex: FF
 ## Exit
 To stop the program:
 quit
+
+## Author
+Created as part of the-codecrafters learning drill and done by Agene Okoh.

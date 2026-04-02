@@ -18,3 +18,7 @@ By typing 'help'
 
 One can also exit the calculator at anytime by typing:
 'quit'
+
+
+## Author
+This is  Created as part of the-codecrafters learning drill and done by Agene Okoh.

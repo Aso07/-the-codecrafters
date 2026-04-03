@@ -2,7 +2,7 @@
 
 This is a Command Line Interface (CLI) system built in Go as part of the CodeCrafters Hackathon.
 
-This tool acts as a "Command & Control (C&C) console", allowing users to execute multiple operations such as calculations, base conversions, and string transformations, all from one interface.
+This tool acts as a "Command & Control (C&C) console", allowing users to execute multiple operations at once, operations such as calculations, base conversions, and string transformations, all from one interface.
 
 
 ## Features
@@ -31,7 +31,7 @@ calc pow 2 3
 
 Extras:
 
-User typt:
+User type:
 calc last       → shows last result
 calc history    → shows calculation history
 
@@ -63,10 +63,10 @@ str reverse hello world
 ### System Commands
 
 User type:
-help        → show all commands
-history     → show command history
-clear       → clear session
-exit        → exit program
+help        -> show all commands
+history     -> show command history
+clear       -> clear session
+exit        -> exit program
 
 
 
@@ -110,8 +110,11 @@ C&C> str upper hello
 1. Navigate to the folder:
 
 ```bash
-cd thecodecrafterthon-dayX
+cd thecodecrafters
 ```
+2. Enter into the file:
+```bash
+cd command-and-control
 
 2. Run the program:
 

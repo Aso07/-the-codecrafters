@@ -130,7 +130,7 @@ go run main.go
 
 * Agene Okoh
 * Janai Egeonu
-* Chibuzo Maxwell
+* Chibueze Maxwell
 * Emmanuel Unogwu
 * Edwin Ejembi
 * Blessing Anebi

@@ -1,6 +1,9 @@
+# Wha are Go Operators
+
 Go Operators are symbols that perform operations on variables and values. They are used for calculations, comparisons, logical decisions, and more.
 
 Go divides the operators into the following groups:
+
 * Arithmetic Operators – Perform math operations + (add), - (subtract), * (multiply), / (divide), % (modulus)
 
 * Assignment Operators – Assign values to variables =, +=, -=, *=, /=, %=

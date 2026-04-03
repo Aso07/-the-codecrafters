@@ -60,25 +60,25 @@ func main() {
 	outputFile := os.Args[2]
 
 	if inputFile == outputFile {
-		fmt.Println("✗ Input and output cannot be the same file.")
+		fmt.Println(" Input and output cannot be the same file.")
 		return
 	}
 
 	inFile, err := os.Open(inputFile)
 	if err != nil {
-		fmt.Printf("✗ File not found: %s\n", inputFile)
+		fmt.Printf(" File not found: %s\n", inputFile)
 		return
 	}
 	defer inFile.Close()
 
 	if info, err := os.Stat(outputFile); err == nil && info.IsDir() {
-		fmt.Println("✗ Cannot write to output: path is a directory, not a file.")
+		fmt.Println(" Cannot write to output: path is a directory, not a file.")
 		return
 	}
 
 	outFile, err := os.Create(outputFile)
 	if err != nil {
-		fmt.Println("✗ Cannot write to output file.")
+		fmt.Println(" Cannot write to output file.")
 		return
 	}
 	defer outFile.Close()
@@ -113,18 +113,18 @@ func main() {
 	}
 
 	if err := scanner.Err(); err != nil {
-		fmt.Println("✗ Error reading file.")
+		fmt.Println(" Error reading file.")
 		return
 	}
 
 	if linesRead == 0 {
-		fmt.Println("⚠ Input file is empty. Nothing to process.")
+		fmt.Println(" Input file is empty. Nothing to process.")
 	}
 
-	fmt.Println("✦ Lines read    :", linesRead)
-	fmt.Println("✦ Lines written :", linesWritten)
-	fmt.Println("✦ Lines removed :", linesRemoved)
-	fmt.Println("✦ Rules applied : Trim whitespace, Remove blank/dash lines, Replace TODO, Replace CLASSIFIED, Reverse REVERSE lines")
+	fmt.Println("* Lines read    :", linesRead)
+	fmt.Println("* Lines written :", linesWritten)
+	fmt.Println("* Lines removed :", linesRemoved)
+	fmt.Println("* Rules applied : Trim whitespace, Remove blank/dash lines, Replace TODO, Replace CLASSIFIED, Reverse REVERSE lines")
 }
 
 func trim(line string) string {
@@ -144,7 +144,7 @@ func shouldRemove(line string) bool {
 }
 
 func replaceTODO(line string) string {
-	return strings.ReplaceAll(line, "TODO:", "✦ ACTION:")
+	return strings.ReplaceAll(line, "TODO:", " ACTION:")
 }
 
 func replaceClassified(line string) string {

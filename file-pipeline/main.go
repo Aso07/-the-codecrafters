@@ -144,7 +144,7 @@ func shouldRemove(line string) bool {
 }
 
 func replaceTODO(line string) string {
-	return strings.ReplaceAll(line, "TODO:", " ACTION:")
+	return strings.ReplaceAll(line, "TODO:", "✦ ACTION:")
 }
 
 func replaceClassified(line string) string {

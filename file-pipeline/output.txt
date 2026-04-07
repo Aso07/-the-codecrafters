@@ -6,7 +6,7 @@ SENTINEL FIELD REPORT — PROCESSED
 005. extra spaces were not cleaned before logging
 006. [REDACTED]: secondary site compromised
 007. normal report line with no issues
-008.  ACTION: send backup to eastern checkpoint
+008. ✦ ACTION: send backup to eastern checkpoint
 009. EVERYTHING WAS FINE UNTIL IT WASN'T
 010. another normal line from the field
 011. classified: the director has been briefed
